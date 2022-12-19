@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twohearts.chat.views.InputAwareLayout
+    android:layout_width="match_parent"
+    android:gravity="top"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:background="@drawable/background_hd1"
+    android:animateLayoutChanges="true">
+
+    <com.twohearts.chat.views.blur.BlurLayout
+        android:id="@+id/chat_header_blur"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:blk_blurRadius="14"
+        app:blk_fps="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#33000000"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay"
+        app:elevation="0dp"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:contentInsetLeft="0dp"
+            app:elevation="0dp"
+            app:contentInsetStart="0dp"
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/img_and_back_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <ImageButton
+                        android:id="@+id/btn_toolbar_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@null"
+                        android:padding="5dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        app:srcCompat="@drawable/ic_arrow_back" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:transitionName="@string/profile_translation_name"
+                        android:id="@+id/user_img_toolbar_chat_act"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:padding="5dp"
+                        android:visibility="gone"
+                        android:layout_marginEnd="4dp"
+                        app:civ_border_width="4px"
+                        app:civ_border_color="@color/white"
+                        android:src="@drawable/user_img_wrapped" />
+
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/search_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:constraint_referenced_ids="search_view_toolbar,up_arrow_search_toolbar,down_arrow_search_toolbar" />
+
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/search_view_toolbar"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:hint="Search"
+                    app:closeIcon="@null"
+                    app:iconifiedByDefault="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/down_arrow_search_toolbar"
+                    app:layout_constraintStart_toEndOf="@+id/img_and_back_container"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:searchIcon="@null" />
+
+
+                <ImageButton
+                    android:id="@+id/up_arrow_search_toolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_up" />
+
+                <ImageButton
+                    android:id="@+id/down_arrow_search_toolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/up_arrow_search_toolbar"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/up_arrow_search_toolbar"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_down" />
+
+
+                <TextView
+                    android:id="@+id/tv_counter_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:text="0"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="17sp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_and_back_container"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/user_name_toolbar_chat_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="6dp"
+                    android:text="John Doe"
+                    android:layout_marginStart="2dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/img_and_back_container"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/available_stat_toolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxWidth="@dimen/max_width_group_users"
+                    android:maxLines="1"
+                    android:textColor="@color/light_gray"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="@id/user_name_toolbar_chat_activity"
+                    app:layout_constraintStart_toStartOf="@+id/user_name_toolbar_chat_activity"
+                    app:layout_constraintTop_toBottomOf="@id/user_name_toolbar_chat_activity"
+                    tools:text="2 Minutes Ago" />
+
+                <com.twohearts.chat.views.TypingIndicator
+                    android:id="@+id/tv_typing_stat_toolbar"
+                    android:layout_width="35dp"
+                    android:layout_height="12dp"
+                    android:visibility="gone"
+                    app:circleRadius="3dp"
+                    app:animDistance="3dp"
+                    app:circleMargin="2dp"
+                    app:animDuration="500"
+                    app:animDelay="150"
+                    app:animInterpolator="accelerateDecelerate"
+                    app:layout_constraintLeft_toLeftOf="@id/user_name_toolbar_chat_activity"
+                    app:layout_constraintStart_toStartOf="@+id/user_name_toolbar_chat_activity"
+                    app:layout_constraintTop_toBottomOf="@id/user_name_toolbar_chat_activity"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    </com.twohearts.chat.views.blur.BlurLayout>
+
+     <include layout="@layout/content_chat" />
+     <ViewStub
+         android:id="@+id/emoji_drawer_stub"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:inflatedId="@+id/emoji_drawer"
+         android:layout="@layout/conversation_activity_emojidrawer_stub"
+         android:layout_gravity="bottom" />
+</com.twohearts.chat.views.InputAwareLayout>

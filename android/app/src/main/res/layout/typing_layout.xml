@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/typing_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:gravity="center"
+    android:layout_gravity="end"
+    android:orientation="horizontal"
+    tools:showIn="@layout/content_chat">
+
+    <com.twohearts.chat.views.mediakeyboard.EmojiToggle
+        android:id="@+id/emoji_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:tint="@color/core_grey_60"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="5dp"/>
+
+
+    <com.twohearts.chat.views.ChatEditText
+        android:id="@+id/et_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_weight="1"
+        android:textColor="@color/colorWhite"
+        android:background="@null"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/write_your_message"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLines="2"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textColorHint="@color/grey"
+        android:textSize="@dimen/et_message_text_size" />
+
+
+    <ImageView
+        android:id="@+id/img_attachment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="12dp"
+        app:srcCompat="@drawable/ic_attach_file"
+        app:tint="@color/colorWhite" />
+</LinearLayout>

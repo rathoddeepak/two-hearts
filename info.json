@@ -1,0 +1,8 @@
+{
+	"tokenBroker":{
+	 "item":{//Token Broker Schema
+	    "id":"name_of_issuer",
+	    "token":"token_of_issuer"	 
+	 }
+	}
+}

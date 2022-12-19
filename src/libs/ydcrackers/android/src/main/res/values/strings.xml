@@ -1,0 +1,17 @@
+<resources>
+    <string name="imagepicker_multiselect_done">Done</string>
+    <string name="imagepicker_multiselect_not_enough_singular">1 Media Required</string>
+    <string name="imagepicker_multiselect_not_enough_plural">%d Media Required</string>
+    <string name="imagepicker_multiselect_enough_singular">1 Media Selected</string>
+    <string name="imagepicker_multiselect_enough_plural">%d Media Selected</string>
+    <string name="imagepicker_multiselect_overselect">You cannot select more than %d images</string>
+    <string name="imagepicker_gallery_intent_title">Select Multiple Images</string>
+    <string name="imagepicker_no_image_text_view">There are no image in your device.</string>
+    <string name="images">Images</string>
+    <string name="videos">Videos</string>
+    <string name="audio">Audio</string>
+    <string name="contacts">Contacts</string>
+    <string name="location">Location</string>
+    <string name="all_photos">All Photos</string>
+    <string name="search_contacts">Search Contacts</string>
+</resources>

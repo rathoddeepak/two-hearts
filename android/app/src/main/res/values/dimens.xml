@@ -1,0 +1,35 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="img_width">240dp</dimen>
+    <dimen name="img_height">240dp</dimen>
+    <dimen name="margin_top_message">1dp</dimen>
+    <dimen name="margin_bottom_message">1dp</dimen>
+    <dimen name="row_gallery_width">130dp</dimen>
+    <dimen name="row_gallery_height">120dp</dimen>
+    <dimen name="new_message_notification_text_size">8sp</dimen>
+    <dimen name="et_message_text_size">16sp</dimen>
+    <dimen name="r_audio_width">275dp</dimen>
+    <dimen name="max_width_group_users">220dp</dimen>
+    <dimen name="chat_top_bar_height">55dp</dimen>
+
+    <dimen name="media_keyboard_provider_icon_padding">5dp</dimen>
+    <dimen name="media_keyboard_provider_icon_margin">4dp</dimen>
+    <dimen name="emoji_drawer_item_width">48dp</dimen>
+    <dimen name="emoji_drawer_size">32sp</dimen>
+    <dimen name="min_keyboard_size">50dp</dimen>
+    <dimen name="min_custom_keyboard_size">110dp</dimen>
+    <dimen name="min_custom_keyboard_top_margin_portrait">170dp</dimen>
+    <dimen name="default_custom_keyboard_size">220dp</dimen>
+    <dimen name="conversation_compose_height">40dp</dimen>
+    <dimen name="conversation_item_body_text_size">16sp</dimen>
+
+    <dimen name="sticker_page_item_padding">8dp</dimen>
+    <dimen name="sticker_page_item_divisor">88dp</dimen>
+    <dimen name="sticker_page_item_multiplier">8dp</dimen>
+
+    <dimen name="progress_bar_height">2dp</dimen>
+</resources>

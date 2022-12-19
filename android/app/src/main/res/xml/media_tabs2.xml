@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        drawable="@drawable/gallery"
+        text="@string/images" />
+
+    <tab
+        drawable="@drawable/video"
+        text="@string/videos" />
+        
+</tabs>

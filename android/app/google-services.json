@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1099048795615",
+    "firebase_url": "https://twohearts-react-2305f.firebaseio.com",
+    "project_id": "twohearts-react-2305f",
+    "storage_bucket": "twohearts-react-2305f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1099048795615:android:b963e23f7164cb01cad86a",
+        "android_client_info": {
+          "package_name": "com.twohearts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1099048795615-pu0gphjch65k85qh0ojkr4e7fe8muljf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.twohearts",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "1099048795615-l1mm85int673qut6slkok75u8em750fm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.twohearts",
+            "certificate_hash": "a28f42f60347a9b1d84bfa6a191986ef8df6aa2a"
+          }
+        },
+        {
+          "client_id": "1099048795615-mm9k9tgcme6653385kol3aa0s5v2o5g9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnQi_c9Lf2ATt-6Gf1JI5xTkdhOpe8i9M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1099048795615-mm9k9tgcme6653385kol3aa0s5v2o5g9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

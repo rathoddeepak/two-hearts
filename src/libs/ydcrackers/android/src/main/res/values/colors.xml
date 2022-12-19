@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+    <color name="primary_text">#212121</color>
+    <color name="error_text">#b71c1c</color>    
+    <color name="black50">#80000000</color>	
+	<color name="orange">#ff5722</color>
+	<color name="multiselect_done">#388e3c</color>
+</resources>
